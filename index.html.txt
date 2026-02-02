@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Mauu 💗</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="fireworks" class="hidden"></canvas>
+
+<div class="container">
+
+  <!-- SECTION 1 -->
+  <section class="card">
+    <img class="gif" src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="cat">
+
+    <p class="text">
+      <strong>Heyyy Mauu 🐱💗</strong><br><br>
+      I made something new…<br>
+      I hope avdel tula 😭<br><br>
+      Just scroll slowlyy 🐾✨
+    </p>
+
+    <div class="petal" onclick="petalNext(1)"></div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="card">
+    <img class="gif" src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" alt="cat">
+
+    <p class="text">
+      It’s been long…<br>
+      <strong>5 years of friendship 🧿</strong><br>
+      <strong>3 years of relationship 💗</strong><br><br>
+      Every moment felt special 🫂
+    </p>
+
+    <div class="petal" onclick="petalNext(2)"></div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="card">
+    <img class="gif" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="cat">
+
+    <p class="text">
+      It all started from your proposal 😂💗<br><br>
+      I promise you won’t regret this 🥹❤️
+    </p>
+
+    <div class="petal" onclick="petalNext(3)"></div>
+  </section>
+
+  <!-- QUESTION -->
+  <section class="card center">
+    <p class="big">WILL YOU BE MY VALENTINE? 💗</p>
+
+    <div class="choice">
+      <button class="yes" onclick="startCelebration()">Yes 🌸</button>
+      <button class="no" onclick="softNo()">No</button>
+    </div>
+
+    <p id="noText" class="soft hidden">
+      That’s okay… I just wanted you to know how I feel 🤍
+    </p>
+  </section>
+
+  <!-- GIFTS -->
+  <section id="gifts" class="card hidden">
+    <p class="text">I have something for you 🎁</p>
+
+    <div class="gift-row">
+      <div class="gift" onclick="openGift('flowers')">🌸</div>
+      <div class="gift" onclick="openGift('choco')">🍫</div>
+      <div class="gift" onclick="openGift('bmw')">🚗</div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Celebration message -->
+<div id="yesMessage" class="celebration-text hidden">
+  💗 You just made my heart celebrate 💗
+</div>
+
+<!-- Gift popup -->
+<div id="giftOverlay" class="hidden" onclick="closeGift()">
+  <img id="giftImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
